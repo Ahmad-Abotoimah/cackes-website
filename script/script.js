@@ -194,8 +194,19 @@ const welcome = document.getElementById('welcome');
 const welcomeuser = function () {
     localStorage.setItem('userName', customerInput.value);
 
+    // if (localStorage.getItem('userName') === '') {
+    //     welcome.innerHTML = Welcome;
+    // } else if (localStorage.getItem('userName') !== '') {
+    //     welcome.innerHTML = `${localStorage.getItem('userName')}`;
+    // }
 };
+
+
 form.addEventListener('submit', welcomeuser, welcome.innerHTML = `${localStorage.getItem('userName')}`);
+if (welcome.innerHTML = `${localStorage.getItem('userName')}` === null) {
+    welcome.innerHTML = 'Welcome';
+}
+
 
 
 
