@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <form>
+                    <form >
                       <div class="mb-3">
                         <label for="customerInput" class="form-label">Customer Name</label>
                         <input type="text" class="form-control" id="customer-Input" aria-describedby="customerHelp" required>
@@ -76,7 +76,8 @@
                           <option value="nut">Nut Free</option>
                         </select>
                       </div>
-                      <div><button type="submit" class="btn btn-primary">Submit</button></div>
+                      <div id="free"></div>
+                      <div><button type="submit" class="btn btn-primary" id="btn">Submit</button></div>
                     </form>
                     <!-- <div class="mb-3">
                       <label for="disabledSelect" class="form-label">Disabled select menu</label>
@@ -97,13 +98,43 @@
                 <div class="col-sm-6">
                     <span id="welcome" class="welcome">Welcome user</span>
                     <button onclick="show_storage();" type="button" class="btn btn-info">Show</button>
+                    <div style="text-align:center;padding:1em 0;">
+                      <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/250441"><span
+                            style="color:gray;"></span><br /></a></h4> <iframe
+                        src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FAmman"
+                        width="100%" height="90" frameborder="0" seamless></iframe>
+                    </div>
 
                 <table class="table">
                     <thead>
                     <tr><th>Name</th><th>Type</th><th>Weight</th></tr>
                     </thead>
                     <tbody id="cupcake-table">
-                    
+                      <tr>
+                          <td>7898</td>
+                          <td ></td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td ></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td id="choco"></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td id="choco"></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td id="choco"></td>
+                        <td></td>
+                      </tr>
                     </tbody>
                     </table>
                 </div>
