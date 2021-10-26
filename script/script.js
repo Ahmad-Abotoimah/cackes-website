@@ -15,29 +15,11 @@ function show_cupcakes() {
 }
 const btn = document.getElementById('btn');
 const form = document.querySelector('form');
-
-
-// function validate(){
-//write code that validates the form
 //customer valid:
 const customerInput = document.getElementById('customer-Input');
 const CustomerHelp = document.getElementById('customer-Help');
 const customerFormat = /^[a-zA-Z]{5,16}$/;
-// customerInput.onkeyup = function () {
-//     if (customerInput.value === "") {
-//         CustomerHelp.innerHTML = "you should fill this field";
-//         CustomerHelp.style.color = "red";
-//         console.log('ahmad')
-//     } else {
-//         if (customerFormat.value.match(customerFormat)) {
-//             CustomerHelp.innerHTML = "";
-//             CustomerHelp.style.color = "green";
-//         } else {
-//             CustomerHelp.innerHTML = "Customer Name not valid";
-//             CustomerHelp.style.color = "red";
-//         }
-//     }
-// };
+
 const customerValid = function (e) {
     if (customerInput.value === "") {
         CustomerHelp.innerHTML = "you should fill this field";
@@ -98,7 +80,6 @@ btn.addEventListener('click', typeValid);
 //delivery:
 const dileveryInput = document.getElementById('delivery-input');
 const dileveryValid = function (e) {
-    console.log(dileveryInput.value);
     if (dileveryInput.value === 'none') {
         dileveryInput.style.border = 'solid 2px red';
         document.getElementById('dilevery-help').style.color = 'red';
@@ -123,8 +104,6 @@ const dileveryValid = function (e) {
 btn.addEventListener('click', dileveryValid);
 
 //conditions of free:
-
-console.log(form);
 const algInput = document.getElementById('allergies-input');
 
 const freeCheck = function (e) {
@@ -159,7 +138,7 @@ btn.addEventListener('click', freeCheck);
 
 
 
-// }
+
 
 //table 
 document.getElementsByTagName('td')[0].innerHTML = `${cup_cakes[0].name}`;
@@ -194,11 +173,6 @@ const welcome = document.getElementById('welcome');
 const welcomeuser = function () {
     localStorage.setItem('userName', customerInput.value);
 
-    // if (localStorage.getItem('userName') === '') {
-    //     welcome.innerHTML = Welcome;
-    // } else if (localStorage.getItem('userName') !== '') {
-    //     welcome.innerHTML = `${localStorage.getItem('userName')}`;
-    // }
 };
 
 
